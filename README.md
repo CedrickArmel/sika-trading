@@ -1,6 +1,6 @@
 # Sika Algorithimic Trading
 
-An algorithmic trading bot trading bot leveraging Sentiment Analysis and classical quantititative stocks markets analysis technics.
+An algorithmic trading bot that combines sentiment analysis with traditional quantitative stock market analysis techniques.
 
 ## Installation for developpement
 
