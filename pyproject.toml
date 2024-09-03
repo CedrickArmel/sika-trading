@@ -1,0 +1,44 @@
+[tool.black]
+line-length = 88
+
+[tool.isort]
+profile = "black"
+
+[tool.poetry]
+license = "LICENSE"
+name = "sikatrading"
+version = "0.1.0"
+description = "An Aalgorithmic trading bot rtrading bot leveraging Sentiment Analysis and classical quantititative stocks markets analysis technics."
+authors = ["Cédrick-Armel Yebouet <cedrickarmelyebouet@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "sikatrading", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+investiny = "^0.7.2"
+pandas = "^2.2.2"
+ta-lib = "^0.4.32"
+numpy = ">=1.26.4,<2.0"
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.1.1"
+mypy = "^1.11.2"
+flake8 = "^7.1.1"
+pylint = "^3.2.7"
+black = "^24.8.0"
+isort = "^5.13.2"
+pytest = "^8.3.2"
+pre-commit = "^3.8.0"
+tox = "^4.18.0"
+tox-gh-actions = "^3.2.0"
+
+
+[tool.poetry.group.notebooks.dependencies]
+plotly = "^5.24.0"
+
+[tool.pylint.format]
+max-line-length = "88"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
